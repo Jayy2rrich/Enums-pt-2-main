@@ -102,17 +102,16 @@ d.  If the shipping method is cloudDigital we want to then check the associated 
         }
 
     var ed = Edition.basic
-    sendOrderConfirmation(productType: .aceRepository, edition: ed, deliveryMethod: .shipping(weight: 1) )
 /*:
 g. Create a variable instance of the Edition enumeration. Name the variable myEdition and set it to the basic case. Then call the upgrade method on that instance.
  */
-
+var myEdition = Edition.basic
 
 
 
 /*:
  h. Finally let’s call the sendOrderConfirmation with the following argument values: of: ProductType.aceRepository, in: myEdition, and by: DeliveryMethod.shipping(weight: 1)
  */
-
+sendOrderConfirmation(productType: .aceRepository, edition: ed, deliveryMethod: .shipping(weight: 1) )
 
 
